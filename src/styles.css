@@ -1,0 +1,155 @@
+@import url("http://fonts.cdnfonts.com/css/lilly");
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.header-text {
+  font-size: 48px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.text-field-generate-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  height: 38px;
+  font-size: 18px;
+  /* border: none !important; */
+  box-shadow: 2px 2px 5px rgb(74, 182, 74);
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+.button:hover,
+.button:focus {
+  color: #fff;
+  background-color: black;
+  outline: 0;
+}
+
+.background-dimension-container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.qr-code-download-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.third {
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+}
+
+.third:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+.toggle-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+a {
+  text-decoration: none !important;
+}
+
+/*  Mobile Screens (up to 600px) */
+@media screen and (max-width: 600px) {
+  .header-text {
+    font-size: 32px;
+  }
+
+  .text-field-generate-container {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .background-dimension-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/*  Tablet Screens (601px - 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .header-text {
+    font-size: 40px;
+  }
+
+  .text-field-generate-container {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .background-dimension-container {
+    gap: 15px;
+  }
+
+  button {
+    width: 120px;
+  }
+}
+
+/* Laptop Screens (901px and above) */
+@media screen and (min-width: 901px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .text-field-generate-container {
+    flex-direction: row;
+  }
+
+  .background-dimension-container {
+    flex-direction: row;
+  }
+}
