@@ -1,7 +1,5 @@
 import React from "react";
-import { func, string } from "prop-types";
 import styled from "styled-components";
-
 import SunnyIcon from "@mui/icons-material/Sunny";
 import Brightness3Icon from "@mui/icons-material/Brightness3";
 
@@ -43,11 +41,6 @@ const Toggle = ({ theme, toggleTheme }) => {
       <Brightness3Icon />
     </ToggleContainer>
   );
-};
-
-Toggle.propTypes = {
-  toggleTheme: func.isRequired,
-  theme: string.isRequired,
 };
 
 export default Toggle;
